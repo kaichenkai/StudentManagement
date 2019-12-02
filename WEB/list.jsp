@@ -75,7 +75,7 @@
                 <td>${student.student_id}</td>
                 <td>${student.name}</td>
                 <td>${student.gender}</td>
-                <td>${student.age}</td>
+                <td>${student.birthday}</td>
                 <td>${student.address}</td>
                 <td>${student.qq}</td>
                 <td>${student.email}</td>

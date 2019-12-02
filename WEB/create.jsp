@@ -71,7 +71,7 @@
     </form>
 </div>
 <script>
-    //给删除选中按钮添加单击事件
+    //给返回按钮添加单击事件, 返回上一个页面
     document.getElementById("getBack").onclick = function(){
          window.history.back(-1);
     };

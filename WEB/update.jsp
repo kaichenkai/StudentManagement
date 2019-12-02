@@ -40,6 +40,10 @@
                   <input type="radio" name="gender" value="男"  />男
                   <input type="radio" name="gender" value="女" checked  />女
               </c:if>
+              <c:if test="${requestScope.student.gender == null}">
+                  <input type="radio" name="gender" value="男" checked/>男
+                  <input type="radio" name="gender" value="女"  />女
+              </c:if>
           </div>
 
           <div class="form-group">
@@ -83,10 +87,16 @@
 
          <div class="form-group" style="text-align: center">
             <input class="btn btn-primary" type="submit" value="提交" />
-            <input class="btn btn-default" type="reset" value="重置" />
-            <input class="btn btn-default" type="button" value="返回"/>
+            <%--<input class="btn btn-default" type="reset" value="重置" />--%>
+            <input class="btn btn-default" type="button" value="返回" id="getBack"/>
          </div>
         </form>
         </div>
-    </body>
+    <script>
+    //给返回按钮添加单击事件, 返回上一个页面
+    document.getElementById("getBack").onclick = function(){
+         window.history.back(-1);
+    };
+    </script>
+</body>
 </html>

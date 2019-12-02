@@ -23,7 +23,7 @@ public class ReadList extends HttpServlet {
         // 查询结果, 将结果集封装为 ReadList 集合
 //        String querySql = "select * from student limit 0, 3";
         String querySql = "select * from student";
-        java.util.List<Map<String, Object>> studentList = template.queryForList(querySql);
+        List<Map<String, Object>> studentList = template.queryForList(querySql);
         // 将学生对象列表存储到 request 对象域中
         request.setAttribute("studentList", studentList);
 
