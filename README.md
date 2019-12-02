@@ -1,5 +1,11 @@
-## 学生信息管理系统
+## StudentManagement
 
-### 功能
-实现学生信息的展示, 以及增删改查的操作
+### v1.0
+该版本由 Servlet + JSP页面 + mysql 实现，功能非常简单:
+ - 使用 mysql 保存学生信息数据.
+ - 能够对学生信息进行增删改查.
 
+
+### 
+
+原文地址： https://www.jianshu.com/p/6a594fbea51d
